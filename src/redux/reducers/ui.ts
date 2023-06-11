@@ -2,10 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 interface UiState {
   selectedProtocol: string | undefined;
+  ratingSum: string;
 }
 
 const getInitialState = (): UiState => ({
   selectedProtocol: undefined,
+  ratingSum: "",
 });
 
 export const uiState = createSlice({

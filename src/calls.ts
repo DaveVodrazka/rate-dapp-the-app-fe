@@ -1,4 +1,5 @@
 import { getContract } from "./contract";
+import { setRatingSum } from "./redux/actions";
 import { store } from "./redux/store";
 
 export const changeChain = async (chainId: string) => {
@@ -18,17 +19,14 @@ export const changeChain = async (chainId: string) => {
 };
 
 export const getRatingData = async () => {
+  const { selectedProtocol } = store.getState().uiState;
   const contract = await getContract();
 
-  if (!contract) {
+  if (!contract || !selectedProtocol) {
     return;
   }
 
-  console.log(contract);
+  const res = await contract.ratingSum(selectedProtocol);
 
-  const res = await contract.ratingSum(
-    "0xA77E4A084d7d4f064E326C0F6c0aCefd47A5Cb21"
-  );
-
-  console.log(res);
+  setRatingSum(res);
 };

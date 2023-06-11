@@ -18,3 +18,6 @@ export const setAddress = (address: string) =>
 
 export const setSelectedProtocol = (address: string) =>
   store.dispatch(updateUiState({ selectedProtocol: address }));
+
+export const setRatingSum = (sum: string) =>
+  store.dispatch(updateUiState({ ratingSum: sum }));

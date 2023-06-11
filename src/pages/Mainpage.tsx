@@ -2,14 +2,18 @@ import { useEffect } from "react";
 import { useUser } from "../hooks/useUser";
 import { SelectChain } from "../components/SelectChain";
 import { SelectProtocol } from "../components/SelectProtocol";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { getRatingData } from "../calls";
+import { useUi } from "../hooks/useUi";
 
 export const Mainpage = () => {
   useEffect(() => {
     document.title = "Main Page | Rate App";
   });
   const user = useUser();
+  const { ratingSum } = useUi();
+
+  console.log("RATING SUM", ratingSum);
 
   if (!user) {
     return (
@@ -56,8 +60,11 @@ export const Mainpage = () => {
             }}
             variant="contained"
           >
-            Let's Rate
+            Get Rating Sum
           </Button>
+          <Box>
+            <Typography>{`${ratingSum}`}</Typography>
+          </Box>
         </Box>
       )}
     </Box>

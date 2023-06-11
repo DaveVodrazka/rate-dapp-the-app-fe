@@ -29,3 +29,16 @@ export const getChain = (chainId: string): Chain =>
 
 export const getProtocol = (address: string): Protocol =>
   protocols.find((protocol) => protocol.address === address)!;
+
+export const getContractAddress = (chainId: string): string => {
+  switch (chainId) {
+    case "0x1389":
+      // Mantle Testnet
+      return "0x7F200A7F5AE72105cd334d78AD94B556d773B209";
+    case "0xa":
+      // Optimism
+      return "0x8AA88a8400Be771554935fDf8bD283105C4d99fa";
+    default:
+      return "";
+  }
+};

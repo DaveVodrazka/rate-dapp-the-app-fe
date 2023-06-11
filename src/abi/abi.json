@@ -16,7 +16,13 @@
     "inputs": [{ "name": "_contract", "type": "address" }],
     "outputs": [{ "name": "", "type": "uint8" }]
   },
-
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "getAverageRating",
+    "inputs": [{ "name": "_contract", "type": "address" }],
+    "outputs": [{ "name": "", "type": "fixed168x10" }]
+  },
   {
     "stateMutability": "view",
     "type": "function",
