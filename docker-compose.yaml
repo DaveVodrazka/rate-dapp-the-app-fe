@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  full-build:
+    build: .
+    ports:
+      - 8080:80
+
+  local-build:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./build:/usr/share/nginx/html
+    ports:
+      - 9000:80

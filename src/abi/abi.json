@@ -1,0 +1,44 @@
+[
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "store",
+    "inputs": [
+      { "name": "_contract", "type": "address" },
+      { "name": "_rating", "type": "uint8" }
+    ],
+    "outputs": [{ "name": "", "type": "bool" }]
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "get",
+    "inputs": [{ "name": "_contract", "type": "address" }],
+    "outputs": [{ "name": "", "type": "uint8" }]
+  },
+
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "ratingData",
+    "inputs": [
+      { "name": "arg0", "type": "address" },
+      { "name": "arg1", "type": "address" }
+    ],
+    "outputs": [{ "name": "", "type": "uint8" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "ratingSum",
+    "inputs": [{ "name": "arg0", "type": "address" }],
+    "outputs": [{ "name": "", "type": "uint256" }]
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "ratingCount",
+    "inputs": [{ "name": "arg0", "type": "address" }],
+    "outputs": [{ "name": "", "type": "uint256" }]
+  }
+]
