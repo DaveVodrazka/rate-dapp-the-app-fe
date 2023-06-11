@@ -1,0 +1,22 @@
+[
+  {
+    "chainId": "0x1389",
+    "name": "Mantle Testnet",
+    "logo": "/unknown-logo.png"
+  },
+  {
+    "chainId": "0x89",
+    "name": "Polygon Mainnet",
+    "logo": "https://icons.llamao.fi/icons/chains/rsz_polygon.jpg"
+  },
+  {
+    "chainId": "0x28c5d",
+    "name": "Taiko (Alpha-3 Testnet)",
+    "logo": "/unknown-logo.png"
+  },
+  {
+    "chainId": "0xa",
+    "name": "Optimism",
+    "logo": "/unknown-logo.png"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "address": "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d",
+    "name": "Lens Protocol",
+    "chainId": "0x89",
+    "logo": "bla.png"
+  },
+  {
+    "address": "0xA77E4A084d7d4f064E326C0F6c0aCefd47A5Cb21",
+    "name": "AAVE",
+    "chainId": "0xa",
+    "logo": "bla.png"
+  },
+  {
+    "address": "0x272465431A6b86E3B9E5b9bD33f5D103a3F59eDb",
+    "name": "fusionx",
+    "chainId": "0x1389",
+    "logo": "mantle.png"
+  },
+  {
+    "address": "0xC13e21B648A5Ee794902342038FF3aDAB66BE987",
+    "name": "Spark",
+    "chainId": "0x1",
+    "logo": "bla.png"
+  },
+  {
+    "address": "0x12345",
+    "name": "Placeholder Project",
+    "chainId": "0x28c5d",
+    "logo": "bla.png"
+  }
+]
